@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A069976B4C66BA4370D80C /* libPods-LocationMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45200621BFBBF9EEF9A1CB77 /* libPods-LocationMessage.a */; };
+		308CA1901D900F4F00240AAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 308CA18E1D900F4F00240AAD /* Localizable.strings */; };
+		308CA1911D900FAC00240AAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 308CA1931D900FAC00240AAD /* InfoPlist.strings */; };
+		30AC45331D8C3B28009CD8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC45321D8C3B28009CD8E6 /* Assets.xcassets */; };
+		30AC453A1D8C3B28009CD8E6 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30AC45391D8C3B28009CD8E6 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		30AC453F1D8C3B28009CD8E6 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AC453E1D8C3B28009CD8E6 /* Messages.framework */; };
+		30AC45431D8C3B28009CD8E6 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC45421D8C3B28009CD8E6 /* MessagesViewController.m */; };
+		30AC45461D8C3B28009CD8E6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AC45441D8C3B28009CD8E6 /* MainInterface.storyboard */; };
+		30AC45481D8C3B28009CD8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC45471D8C3B28009CD8E6 /* Assets.xcassets */; };
+		30AC45541D8CEAE9009CD8E6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AC45531D8CEAE9009CD8E6 /* MapKit.framework */; };
+		30AC45591D8D03FB009CD8E6 /* HHLocationComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC45581D8D03FB009CD8E6 /* HHLocationComposeViewController.m */; };
+		30AC455C1D8D0409009CD8E6 /* HHLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC455B1D8D0409009CD8E6 /* HHLocationViewController.m */; };
+		30AC45601D8D0707009CD8E6 /* HHLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC455F1D8D0707009CD8E6 /* HHLocationTableViewCell.m */; };
+		30AC45631D8D163D009CD8E6 /* HHLocationCompactComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC45621D8D163D009CD8E6 /* HHLocationCompactComposeViewController.m */; };
+		30AC45661D8D187C009CD8E6 /* HHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC45651D8D187C009CD8E6 /* HHLocation.m */; };
+		30AC456A1D8D6372009CD8E6 /* ECSPGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC45691D8D6372009CD8E6 /* ECSPGeocoder.m */; };
+		30B8F51E1D8E9A6900D9BA82 /* HHLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B8F51D1D8E9A6900D9BA82 /* HHLocationView.m */; };
+		30B8F5221D8EF3BA00D9BA82 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B8F5211D8EF3BA00D9BA82 /* UIColor+Theme.m */; };
+		BFA1FCAECCA38D8AFAA1CA93 /* libPods-MessagesExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2706F5998DCA258E988ACD92 /* libPods-MessagesExtension.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30AC453B1D8C3B28009CD8E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30AC45291D8C3B28009CD8E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30AC45381D8C3B28009CD8E6;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30AC454F1D8C3B28009CD8E6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				30AC453A1D8C3B28009CD8E6 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2706F5998DCA258E988ACD92 /* libPods-MessagesExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessagesExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29339E1FF669B7278A101E0F /* Pods-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		308CA18E1D900F4F00240AAD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		308CA1921D900FAC00240AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		308CA1941D900FE600240AAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.storyboard"; sourceTree = "<group>"; };
+		308CA1951D900FE600240AAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		30AC452F1D8C3B28009CD8E6 /* LocationMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AC45321D8C3B28009CD8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30AC45341D8C3B28009CD8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AC45391D8C3B28009CD8E6 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AC453E1D8C3B28009CD8E6 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		30AC45411D8C3B28009CD8E6 /* MessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		30AC45421D8C3B28009CD8E6 /* MessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		30AC45451D8C3B28009CD8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		30AC45471D8C3B28009CD8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30AC45491D8C3B28009CD8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AC45531D8CEAE9009CD8E6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		30AC45571D8D03FB009CD8E6 /* HHLocationComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationComposeViewController.h; sourceTree = "<group>"; };
+		30AC45581D8D03FB009CD8E6 /* HHLocationComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationComposeViewController.m; sourceTree = "<group>"; };
+		30AC455A1D8D0409009CD8E6 /* HHLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationViewController.h; sourceTree = "<group>"; };
+		30AC455B1D8D0409009CD8E6 /* HHLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationViewController.m; sourceTree = "<group>"; };
+		30AC455E1D8D0707009CD8E6 /* HHLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationTableViewCell.h; sourceTree = "<group>"; };
+		30AC455F1D8D0707009CD8E6 /* HHLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationTableViewCell.m; sourceTree = "<group>"; };
+		30AC45611D8D163D009CD8E6 /* HHLocationCompactComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationCompactComposeViewController.h; sourceTree = "<group>"; };
+		30AC45621D8D163D009CD8E6 /* HHLocationCompactComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationCompactComposeViewController.m; sourceTree = "<group>"; };
+		30AC45641D8D187C009CD8E6 /* HHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocation.h; sourceTree = "<group>"; };
+		30AC45651D8D187C009CD8E6 /* HHLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocation.m; sourceTree = "<group>"; };
+		30AC45681D8D6372009CD8E6 /* ECSPGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSPGeocoder.h; sourceTree = "<group>"; };
+		30AC45691D8D6372009CD8E6 /* ECSPGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSPGeocoder.m; sourceTree = "<group>"; };
+		30B8F51C1D8E9A6900D9BA82 /* HHLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLocationView.h; sourceTree = "<group>"; };
+		30B8F51D1D8E9A6900D9BA82 /* HHLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLocationView.m; sourceTree = "<group>"; };
+		30B8F5201D8EF3BA00D9BA82 /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
+		30B8F5211D8EF3BA00D9BA82 /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		3C33C9C895F41AA355BEA54C /* Pods-LocationMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationMessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationMessage/Pods-LocationMessage.release.xcconfig"; sourceTree = "<group>"; };
+		45200621BFBBF9EEF9A1CB77 /* libPods-LocationMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationMessage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A29D308FC5AA1C4C5D64A4B /* Pods-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F2D969966A83E5F01DA14788 /* Pods-LocationMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationMessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationMessage/Pods-LocationMessage.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30AC45361D8C3B28009CD8E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AC453F1D8C3B28009CD8E6 /* Messages.framework in Frameworks */,
+				30AC45541D8CEAE9009CD8E6 /* MapKit.framework in Frameworks */,
+				BFA1FCAECCA38D8AFAA1CA93 /* libPods-MessagesExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67D6DF0578E863552A01CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A069976B4C66BA4370D80C /* libPods-LocationMessage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30AC45281D8C3B28009CD8E6 = {
+			isa = PBXGroup;
+			children = (
+				30AC45311D8C3B28009CD8E6 /* LocationMessage */,
+				30AC45401D8C3B28009CD8E6 /* MessagesExtension */,
+				30AC453D1D8C3B28009CD8E6 /* Frameworks */,
+				30AC45301D8C3B28009CD8E6 /* Products */,
+				BCEC503FDEADA3AC7D88ACF2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		30AC45301D8C3B28009CD8E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30AC452F1D8C3B28009CD8E6 /* LocationMessage.app */,
+				30AC45391D8C3B28009CD8E6 /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30AC45311D8C3B28009CD8E6 /* LocationMessage */ = {
+			isa = PBXGroup;
+			children = (
+				30AC45321D8C3B28009CD8E6 /* Assets.xcassets */,
+				30AC45341D8C3B28009CD8E6 /* Info.plist */,
+			);
+			path = LocationMessage;
+			sourceTree = "<group>";
+		};
+		30AC453D1D8C3B28009CD8E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30AC45531D8CEAE9009CD8E6 /* MapKit.framework */,
+				30AC453E1D8C3B28009CD8E6 /* Messages.framework */,
+				45200621BFBBF9EEF9A1CB77 /* libPods-LocationMessage.a */,
+				2706F5998DCA258E988ACD92 /* libPods-MessagesExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30AC45401D8C3B28009CD8E6 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				30B8F51F1D8EF38B00D9BA82 /* Addtions */,
+				30AC45671D8D5829009CD8E6 /* Helper */,
+				30AC455D1D8D06D6009CD8E6 /* Cell&Views */,
+				30AC45561D8D03C3009CD8E6 /* Models */,
+				30AC45551D8D03A7009CD8E6 /* ViewControllers */,
+				30AC45411D8C3B28009CD8E6 /* MessagesViewController.h */,
+				30AC45421D8C3B28009CD8E6 /* MessagesViewController.m */,
+				30AC45441D8C3B28009CD8E6 /* MainInterface.storyboard */,
+				30AC45471D8C3B28009CD8E6 /* Assets.xcassets */,
+				30AC45491D8C3B28009CD8E6 /* Info.plist */,
+				308CA1931D900FAC00240AAD /* InfoPlist.strings */,
+				308CA18E1D900F4F00240AAD /* Localizable.strings */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		30AC45551D8D03A7009CD8E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				30AC45571D8D03FB009CD8E6 /* HHLocationComposeViewController.h */,
+				30AC45581D8D03FB009CD8E6 /* HHLocationComposeViewController.m */,
+				30AC455A1D8D0409009CD8E6 /* HHLocationViewController.h */,
+				30AC455B1D8D0409009CD8E6 /* HHLocationViewController.m */,
+				30AC45611D8D163D009CD8E6 /* HHLocationCompactComposeViewController.h */,
+				30AC45621D8D163D009CD8E6 /* HHLocationCompactComposeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		30AC45561D8D03C3009CD8E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30AC45641D8D187C009CD8E6 /* HHLocation.h */,
+				30AC45651D8D187C009CD8E6 /* HHLocation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30AC455D1D8D06D6009CD8E6 /* Cell&Views */ = {
+			isa = PBXGroup;
+			children = (
+				30AC455E1D8D0707009CD8E6 /* HHLocationTableViewCell.h */,
+				30AC455F1D8D0707009CD8E6 /* HHLocationTableViewCell.m */,
+				30B8F51C1D8E9A6900D9BA82 /* HHLocationView.h */,
+				30B8F51D1D8E9A6900D9BA82 /* HHLocationView.m */,
+			);
+			path = "Cell&Views";
+			sourceTree = "<group>";
+		};
+		30AC45671D8D5829009CD8E6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				30AC45681D8D6372009CD8E6 /* ECSPGeocoder.h */,
+				30AC45691D8D6372009CD8E6 /* ECSPGeocoder.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		30B8F51F1D8EF38B00D9BA82 /* Addtions */ = {
+			isa = PBXGroup;
+			children = (
+				30B8F5201D8EF3BA00D9BA82 /* UIColor+Theme.h */,
+				30B8F5211D8EF3BA00D9BA82 /* UIColor+Theme.m */,
+			);
+			path = Addtions;
+			sourceTree = "<group>";
+		};
+		BCEC503FDEADA3AC7D88ACF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2D969966A83E5F01DA14788 /* Pods-LocationMessage.debug.xcconfig */,
+				3C33C9C895F41AA355BEA54C /* Pods-LocationMessage.release.xcconfig */,
+				29339E1FF669B7278A101E0F /* Pods-MessagesExtension.debug.xcconfig */,
+				9A29D308FC5AA1C4C5D64A4B /* Pods-MessagesExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30AC452E1D8C3B28009CD8E6 /* LocationMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AC45501D8C3B28009CD8E6 /* Build configuration list for PBXNativeTarget "LocationMessage" */;
+			buildPhases = (
+				25633BBD23D0CA1877FCF332 /* [CP] Check Pods Manifest.lock */,
+				30AC452D1D8C3B28009CD8E6 /* Resources */,
+				30AC454F1D8C3B28009CD8E6 /* Embed App Extensions */,
+				E67D6DF0578E863552A01CB3 /* Frameworks */,
+				E1E6342272896ADDEC49F01D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30AC453C1D8C3B28009CD8E6 /* PBXTargetDependency */,
+			);
+			name = LocationMessage;
+			productName = LocationMessage;
+			productReference = 30AC452F1D8C3B28009CD8E6 /* LocationMessage.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		30AC45381D8C3B28009CD8E6 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30AC454C1D8C3B28009CD8E6 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				85507D8479E502B184F3D020 /* [CP] Check Pods Manifest.lock */,
+				30AC45351D8C3B28009CD8E6 /* Sources */,
+				30AC45361D8C3B28009CD8E6 /* Frameworks */,
+				30AC45371D8C3B28009CD8E6 /* Resources */,
+				E8FED4D4B1DAEC3AA3CD8072 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 30AC45391D8C3B28009CD8E6 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30AC45291D8C3B28009CD8E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = hong7;
+				TargetAttributes = {
+					30AC452E1D8C3B28009CD8E6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X7G3ZD2JQ8;
+						ProvisioningStyle = Automatic;
+					};
+					30AC45381D8C3B28009CD8E6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X7G3ZD2JQ8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 30AC452C1D8C3B28009CD8E6 /* Build configuration list for PBXProject "LocationMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 30AC45281D8C3B28009CD8E6;
+			productRefGroup = 30AC45301D8C3B28009CD8E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30AC452E1D8C3B28009CD8E6 /* LocationMessage */,
+				30AC45381D8C3B28009CD8E6 /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30AC452D1D8C3B28009CD8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AC45331D8C3B28009CD8E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30AC45371D8C3B28009CD8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AC45481D8C3B28009CD8E6 /* Assets.xcassets in Resources */,
+				308CA1901D900F4F00240AAD /* Localizable.strings in Resources */,
+				308CA1911D900FAC00240AAD /* InfoPlist.strings in Resources */,
+				30AC45461D8C3B28009CD8E6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25633BBD23D0CA1877FCF332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85507D8479E502B184F3D020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E6342272896ADDEC49F01D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationMessage/Pods-LocationMessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FED4D4B1DAEC3AA3CD8072 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30AC45351D8C3B28009CD8E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30AC456A1D8D6372009CD8E6 /* ECSPGeocoder.m in Sources */,
+				30AC45661D8D187C009CD8E6 /* HHLocation.m in Sources */,
+				30AC45631D8D163D009CD8E6 /* HHLocationCompactComposeViewController.m in Sources */,
+				30AC45601D8D0707009CD8E6 /* HHLocationTableViewCell.m in Sources */,
+				30AC45591D8D03FB009CD8E6 /* HHLocationComposeViewController.m in Sources */,
+				30B8F5221D8EF3BA00D9BA82 /* UIColor+Theme.m in Sources */,
+				30AC45431D8C3B28009CD8E6 /* MessagesViewController.m in Sources */,
+				30AC455C1D8D0409009CD8E6 /* HHLocationViewController.m in Sources */,
+				30B8F51E1D8E9A6900D9BA82 /* HHLocationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30AC453C1D8C3B28009CD8E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30AC45381D8C3B28009CD8E6 /* MessagesExtension */;
+			targetProxy = 30AC453B1D8C3B28009CD8E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		308CA1931D900FAC00240AAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				308CA1921D900FAC00240AAD /* en */,
+				308CA1951D900FE600240AAD /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30AC45441D8C3B28009CD8E6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AC45451D8C3B28009CD8E6 /* Base */,
+				308CA1941D900FE600240AAD /* zh-Hans */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30AC454A1D8C3B28009CD8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30AC454B1D8C3B28009CD8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30AC454D1D8C3B28009CD8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29339E1FF669B7278A101E0F /* Pods-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongqi.locmsg.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30AC454E1D8C3B28009CD8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A29D308FC5AA1C4C5D64A4B /* Pods-MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongqi.locmsg.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		30AC45511D8C3B28009CD8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D969966A83E5F01DA14788 /* Pods-LocationMessage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X7G3ZD2JQ8;
+				INFOPLIST_FILE = LocationMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongqi.locmsg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30AC45521D8C3B28009CD8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C33C9C895F41AA355BEA54C /* Pods-LocationMessage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X7G3ZD2JQ8;
+				INFOPLIST_FILE = LocationMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hongqi.locmsg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30AC452C1D8C3B28009CD8E6 /* Build configuration list for PBXProject "LocationMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC454A1D8C3B28009CD8E6 /* Debug */,
+				30AC454B1D8C3B28009CD8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AC454C1D8C3B28009CD8E6 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC454D1D8C3B28009CD8E6 /* Debug */,
+				30AC454E1D8C3B28009CD8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30AC45501D8C3B28009CD8E6 /* Build configuration list for PBXNativeTarget "LocationMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30AC45511D8C3B28009CD8E6 /* Debug */,
+				30AC45521D8C3B28009CD8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30AC45291D8C3B28009CD8E6 /* Project object */;
+}
